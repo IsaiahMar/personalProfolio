@@ -6,12 +6,19 @@
 
 .container {
     text-align: center;
-    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/IMG_3167.JPG');
+    background-size: cover;
+    background-position: center 30%;
+    height: 100vh;
+    margin-top: 100%;
+    background-attachment: fixed;
+    width: 100%;
+    margin: auto 5px;
 }
 .header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/IMG_3167.JPG');
     background-size: cover;
-    background-position: center;
+    background-position: center 30%;
     height: 100vh;
     background-attachment: fixed;
     display: block;
@@ -313,6 +320,7 @@ hr{
   .info-text {
     font-size: 1.3rem;
     display: inline-block;
+    color: #c9691a;
   }
   
   .contact-form .title:after {
@@ -416,39 +424,38 @@ ion-icon {
 .empty img {
     max-width: 100%; 
 }
-.projects a{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 0;
-    list-style-type: none;
-    align-items: flex-start;
-}
-.projects img{
-    height: 350px;
-    width: 350px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 0;
-    list-style-type: none;
-    align-items: flex-start;
-}
+
 .project-text{
     font-size: 20px;
     text-align: center;
 }
 
-.emptied{
-    flex: 1;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    box-sizing: border-box;
-}
-.emptied img{
-    max-width: 60%;
-}
 .intro{
     background-color: aqua;
 }
+.gith{
+    border: 1px solid #e67e27;
+    color: #e67e27;
+    margin: 0;
+    padding: 12px 40px;
+    box-sizing: border-box;
+    top: 64%;
+    right: 48%;
+    position: absolute;
+    border-radius: 160px;
+}
+.gith p{
+    z-index: -1;
+    width: 150px;
+    line-height: 20px;
+    display: inline-block;
+    padding: 200px 0px;
+    vertical-align: middle;
+    font-family: "Trebuchet MS";
+    height: 150px
+}
+.gith:hover{
+    color: white;
+    background-color: #e67e27;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
