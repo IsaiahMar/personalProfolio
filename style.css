@@ -459,3 +459,30 @@ ion-icon {
     background-color: #e67e27;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
+
+  .TicTacToe{
+    border: 1px solid #e67e27;
+    color: #e67e27;
+    margin: 0;
+    padding: 12px 40px;
+    box-sizing: border-box;
+    top: 64%;
+    right: 48%;
+    position: absolute;
+    border-radius: 160px;
+}
+.TicTacToe p{
+    z-index: -1;
+    width: 150px;
+    line-height: 20px;
+    display: inline-block;
+    padding: 200px 0px;
+    vertical-align: middle;
+    font-family: "Trebuchet MS";
+    height: 150px
+}
+.TicTacToe:hover{
+    color: white;
+    background-color: #e67e27;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
