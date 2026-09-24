@@ -3,110 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Profolio</title>
+    <title>Isaiah Marshall | Software Engineer</title>
+    <meta name="description" content="Isaiah Marshall is a senior at Morgan State University and an undergraduate researcher in the Human-AI Experience Lab who builds web applications with Python, JavaScript, and PHP.">
+    <meta property="og:title" content="Isaiah Marshall | Software Engineer">
+    <meta property="og:description" content="Senior at Morgan State University and undergraduate researcher in the Human-AI Experience Lab.">
+    <meta property="og:image" content="img/portrait.jpg">
+    <meta name="theme-color" content="#0f1115">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23e8702a'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='28' fill='white'>IM</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="https://jsdelivr.net"></script>
-    
+    <script src="index.js" defer></script>
 </head>
 <body>
-<section class="home" id="home">
-    <div class="container">
-        <header class="header">
-            <h1 class="name">Isaiah Marshall</h1>
-            <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#contact">Contact</a>
-                <a href="#Gallery">Gallery</a>
-                <a href="projects.html">Projects</a>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="wrap nav-wrap">
+            <a class="logo" href="#top" aria-label="Isaiah Marshall, back to top">Isaiah<span>.</span></a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="site-nav" class="site-nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact" class="nav-cta">Contact</a>
             </nav>
-    </header>
-    </div>
-</section>
-    <section class="contact" id="contact">
-        <div class="form-container">
-        <h2>Send a Message</h2>
-        <form id="contact-form">
-            <label for="user_name">Name</label>
-            <input type="text" id="user_name" name="user_name" required>
-
-            <label for="user_email">Email</label>
-            <input type="email" id="user_email" name="user_email" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
         </div>
-            </section>
-        <section class="about-me" id="about">
-            <div class="intro">
-                <div class="info">
-                <h1 class="about">About Me</h1>
-                <hr>
-                <p>Isaiah is an aspiring software enginner with about 4 years of coding experience. He is current at Thaddeus Stevens College of technology where he is currently in the computer software engineering major. After this he plans to attend a four year college to get his bachelor's in Computer Science. Also after a few years on the job he plans to create his own tech company and create his own software and make a profit.</p>
-                </div>
-                <div class="column1">
-                <ion-icon name="timer-outline"></ion-icon>
-                <h3> Experience</h3>
-                <p>I have been coding for over 4 years. I started coding my freshman year of high school, the first language i ever learned was python. I was able to pick it up pretty quickly since the syntax of it was easy to learn.</p>
-            </div>
-            <div class="column2">
-                <ion-icon name="cart-outline"></ion-icon>
-                <h3>Why i started coding?</h3>
-                <p>The reason that i start coding because it taught me how to take complex problems and create a simple solution. Coding is really interesting because there is never one solution to a problem there are many. </p>
-            </div>
-            <div class="column3">
-                <ion-icon name="restaurant-outline"></ion-icon>
-                <h3>Hobbies</h3>
-                <ol>
-                    <li>Running</li>
-                    <li>Basketball</li>
-                    <li>Lifting</li>
-                    <li>Coding</li>
-                    <li>Video games</li>
-                </ol>
-            </div>
-                </div>
-            </div>
-        </section>
-        <section id="Gallery">
+    </header>
 
-        
-            <div class="pics">
-                <div class="empty">
-                
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero" id="top">
+            <div class="wrap hero-grid">
+                <div class="hero-text">
+                    <p class="eyebrow">Senior at Morgan State University</p>
+                    <h1>Hi, I'm Isaiah Marshall.<br><span class="accent">I build things for the web.</span></h1>
+                    <p class="lede">
+                        I'm in my final year at Morgan State University, where I do research in the
+                        Human-AI Experience Lab. I build full-stack web apps with Python, JavaScript, and PHP,
+                        and I like turning complicated problems into simple, working software.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#projects">View my work</a>
+                        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+                    </div>
+                    <ul class="hero-links" aria-label="Profiles">
+                        <li>
+                            <a href="https://github.com/IsaiahMar" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+                                GitHub
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="empty">
-                    <img src="img/IMG_0360.jpg" alt="">
-                </div>
-                <div class="empty">
-                    <img src="img/IMG_0363.jpg" alt="">
-                </div>
-                <div class="empty">
-                    <img src="img/IMG_0367.jpg" alt="">
-                </div>
-            </div>
-            <div class="pics">
-                <div class="empty">
-                    <img src="img/IMG_0379.jpg" alt="">
-                </div>
-                <div class="empty">
-                    <img src="img/IMG_0605.jpg" alt="">
-                </div>
-                <div class="empty">
-                    <img src="img/IMG_0742.JPG" alt="">
-                </div>
-                <div class="empty">
-                    <img src="img/1BAE15B7-86E5-4A10-9736-18C118BD97A7.JPG" alt="">
+                <div class="hero-photo">
+                    <img src="img/portrait.jpg" alt="Isaiah Marshall in a tan suit standing in front of a brick building" width="900" height="1200">
                 </div>
             </div>
         </section>
-        
-            
-              
-        
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="wrap about-grid">
+                <div>
+                    <p class="section-label">01 / About</p>
+                    <h2>Learning by building</h2>
+                    <p>
+                        I started programming with Python in my freshman year of high school and haven't stopped
+                        since. I studied Computer Software Engineering at Thaddeus Stevens College of Technology,
+                        then transferred to Morgan State University, where I'm now in my senior year. Along the way
+                        I've built everything from small browser games to a full Laravel application with
+                        role-based access, messaging, and volunteer-hour tracking.
+                    </p>
+                    <p>
+                        What keeps me hooked is that a problem never has just one solution. I like breaking a hard
+                        problem into small pieces, trying different approaches, and landing on the simplest one
+                        that works.
+                    </p>
+                    <p>
+                        At Morgan State, I'm an undergraduate researcher in the Human-AI Experience Lab, advised
+                        by Dr. Mack. Long term, I want to start my own software company.
+                    </p>
+                </div>
+                <dl class="facts">
+                    <div>
+                        <dt>Education</dt>
+                        <dd>Morgan State University<br><span>Senior</span></dd>
+                    </div>
+                    <div>
+                        <dt>Research</dt>
+                        <dd>Human-AI Experience Lab<br><span>Advised by Dr. Mack</span></dd>
+                    </div>
+                    <div>
+                        <dt>Previously</dt>
+                        <dd>Thaddeus Stevens College of Technology<br><span>Computer Software Engineering</span></dd>
+                    </div>
+                    <div>
+                        <dt>Open to</dt>
+                        <dd>New-grad &amp; entry-level roles</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section section-alt" id="skills">
+            <div class="wrap">
+                <p class="section-label">02 / Skills</p>
+                <h2>Tools I work with</h2>
+                <div class="skill-groups">
+                    <div class="skill-group">
+                        <h3>Languages</h3>
+                        <ul class="tags">
+                            <li>Python</li><li>JavaScript</li><li>PHP</li><li>HTML</li><li>CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Frameworks</h3>
+                        <ul class="tags">
+                            <li>Laravel</li><li>Flask</li><li>Tailwind CSS</li><li>Blade</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Tools &amp; concepts</h3>
+                        <ul class="tags">
+                            <li>Git &amp; GitHub</li><li>REST routing</li><li>Authentication</li><li>Data structures</li><li>Responsive design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <div class="wrap">
+                <p class="section-label">03 / Projects</p>
+                <h2>Things I've built</h2>
+
+                <div class="featured">
+                    <article class="project project-featured">
+                        <div class="project-head">
+                            <span class="project-kind">Full-stack web app</span>
+                            <h3>Volunteer Village</h3>
+                        </div>
+                        <p>
+                            A platform that connects students, schools, and organizations around volunteer work.
+                            Organizations post opportunities, students log hours, teachers verify them, and a
+                            leaderboard tracks totals. It includes role-based access for students, teachers,
+                            organizations, and admins, plus school approval and direct messaging.
+                        </p>
+                        <ul class="tags tags-sm"><li>PHP</li><li>Laravel</li><li>Blade</li><li>Tailwind CSS</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/IsaiahMar/Volunteer_village" target="_blank" rel="noopener">Source code <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </article>
+
+                    <article class="project project-featured">
+                        <div class="project-head">
+                            <span class="project-kind">Data structures</span>
+                            <h3>Transit System Simulator</h3>
+                        </div>
+                        <p>
+                            A command-line simulator for a train network modeled as a graph. Users add stations
+                            and connections, queue passengers, and board trains. The shortest route between
+                            stations is found with breadth-first search, and a stack keeps a history of actions.
+                        </p>
+                        <ul class="tags tags-sm"><li>Python</li><li>Graphs</li><li>BFS / DFS</li><li>Stacks &amp; queues</li></ul>
+                        <div class="project-links">
+                            <a href="https://github.com/IsaiahMar/Transit-System-simulator" target="_blank" rel="noopener">Source code <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project">
+                        <span class="project-kind">Browser game</span>
+                        <h3>Falling Words</h3>
+                        <p>Type the falling words before they hit the ground. You get three lives, and the words speed up as you go.</p>
+                        <ul class="tags tags-sm"><li>JavaScript</li><li>CSS</li></ul>
+                        <div class="project-links">
+                            <a href="https://isaiahmar.github.io/typing-game/" target="_blank" rel="noopener">Live demo</a>
+                            <a href="https://github.com/IsaiahMar/typing-game" target="_blank" rel="noopener">Code</a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <span class="project-kind">Web app</span>
+                        <h3>MathWeb</h3>
+                        <p>A timed math quiz with easy, medium, and hard modes and a live score.</p>
+                        <ul class="tags tags-sm"><li>JavaScript</li><li>HTML</li></ul>
+                        <div class="project-links">
+                            <a href="https://isaiahmar.github.io/mathWebApp/" target="_blank" rel="noopener">Live demo</a>
+                            <a href="https://github.com/IsaiahMar/mathWebApp" target="_blank" rel="noopener">Code</a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <span class="project-kind">Web app</span>
+                        <h3>Grocery List Keeper</h3>
+                        <p>A grocery list app for adding items, marking them purchased, and filtering by status.</p>
+                        <ul class="tags tags-sm"><li>JavaScript</li><li>DOM</li></ul>
+                        <div class="project-links">
+                            <a href="https://isaiahmar.github.io/groceryList/" target="_blank" rel="noopener">Live demo</a>
+                            <a href="https://github.com/IsaiahMar/groceryList" target="_blank" rel="noopener">Code</a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <span class="project-kind">Browser game</span>
+                        <h3>Tic Tac Toe</h3>
+                        <p>Two-player tic-tac-toe with win and tie detection and a running scoreboard.</p>
+                        <ul class="tags tags-sm"><li>JavaScript</li><li>Game logic</li></ul>
+                        <div class="project-links">
+                            <a href="https://isaiahmar.github.io/TicTacToe/" target="_blank" rel="noopener">Live demo</a>
+                            <a href="https://github.com/IsaiahMar/TicTacToe" target="_blank" rel="noopener">Code</a>
+                        </div>
+                    </article>
+                    <article class="project">
+                        <span class="project-kind">Browser game</span>
+                        <h3>Rock, Paper, Scissors</h3>
+                        <p>Play rock, paper, scissors against the computer with a running score.</p>
+                        <ul class="tags tags-sm"><li>JavaScript</li></ul>
+                        <div class="project-links">
+                            <a href="https://isaiahmar.github.io/RockPaper/" target="_blank" rel="noopener">Live demo</a>
+                            <a href="https://github.com/IsaiahMar/RockPaper" target="_blank" rel="noopener">Code</a>
+                        </div>
+                    </article>
+                    <a class="project project-more" href="https://github.com/IsaiahMar?tab=repositories" target="_blank" rel="noopener">
+                        <span>More on GitHub</span>
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beyond code -->
+        <section class="section section-alt" id="beyond">
+            <div class="wrap beyond-grid">
+                <img src="img/track.jpg" alt="Isaiah running the anchor leg of a relay at an indoor track meet" width="900" height="900" loading="lazy">
+                <div>
+                    <p class="section-label">04 / Beyond the code</p>
+                    <h2>Outside the editor</h2>
+                    <p>
+                        I competed in track and football in high school, and that's where I learned discipline and
+                        how to be a good teammate. When I'm not coding, you'll find me running, lifting, playing
+                        basketball, or playing video games.
+                    </p>
+                    <ul class="tags">
+                        <li>Running</li><li>Basketball</li><li>Lifting</li><li>Video games</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact" id="contact">
+            <div class="wrap contact-inner">
+                <p class="section-label">05 / Contact</p>
+                <h2>Let's work together</h2>
+                <p class="lede">
+                    I'm graduating soon and looking for new-grad and entry-level software roles. If you have an opportunity or just
+                    want to talk code, I'd love to hear from you.
+                </p>
+                <div class="hero-actions center">
+                    <a class="btn btn-primary" href="mailto:immarshall2005@gmail.com">Email me</a>
+                    <a class="btn btn-ghost" href="https://github.com/IsaiahMar" target="_blank" rel="noopener">GitHub</a>
+                </div>
+                <p class="contact-email">immarshall2005@gmail.com</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p>&copy; <span id="year">2026</span> Isaiah Marshall</p>
+            <a href="#top">Back to top &uarr;</a>
+        </div>
+    </footer>
 </body>
 </html>
